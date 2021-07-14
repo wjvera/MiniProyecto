@@ -1,0 +1,134 @@
+/*
+ejercicio completo con html y css
+
+1. crear un documento html y vincularlo con css
+2. crear una estructura html que cuente 
+
+contenedor en general
+cabecera
+menu
+barra lateral
+seccion de contenido principal
+elementos dentro del contenedor principal
+footer
+
+3. todo el contenido debe estar dentro del contenedor
+general y su ancho sera de 1200px
+
+4. su header debe ocupar el 100% del ancho y 
+tener un texto grande centrado
+
+5. el menu debe tener los elementos uno a lado
+del otro
+
+6. el contenido principal debe tener un ancho de 
+70%
+
+7. el contenido dentro del contenedor principal debe
+ser una cuadricula con 4 ineas de 2 cajas
+
+8. la barra lateral debe tener un ancho del 30%
+
+9. el footer debe tener un ancho del 100%
+y estar abajo de todo
+*/
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+
+#general{
+    width: 1200px;
+    margin: 0px auto;
+    margin-top: 30px; /**/
+    border: 1px solid #ccc;
+}
+
+.header{
+    width: 100%;
+    height: 100px; /**/
+    background-color: rgb(15, 118, 236);
+    color: white;
+    text-align: center;
+    line-height: 100px;
+}
+
+.menu{
+    background-color: #aaaa;
+}
+
+.menu ul li{
+    display: block;
+    float: left;
+    padding: 15px;
+    border-right: 1px solid whitesmoke;
+}
+
+.menu ul li a{
+    color: white;
+}
+
+.menu ul li:hover{
+    background-color: skyblue;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+.contenido{
+    width: 70%;
+    /*border: 1px solid #ccc;*/
+    float: left;
+}
+
+.contenido > h1{
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    padding: 15px;
+    color: #444;
+}
+
+.barralateral{
+    width: 29%;
+    /*border: 1px solid green;*/
+    float: left;
+    min-height: 1430px;
+    text-align: center;
+}
+
+.cajas{
+    width: 300px;
+    height: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 20px;
+    float: left;
+    margin-right: 70px;
+}
+
+.cajas1{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    margin: 20px;
+    float: left;
+}
+
+.cajas h2{
+    text-align: center;
+}
+
+footer{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    background-color: skyblue;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
